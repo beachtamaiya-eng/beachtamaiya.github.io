@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Shadow - Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="Game">
+  <header>
+    <h1 class="neon-title">Guess the Shadow</h1>
+    <p class="neon-sub">Look at the shadow, guess the character, and see if you’re right.</p>
+
+    <nav>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="game.html" class="nav-link">Guess the Characters</a>
+      <a href="gallery.html" class="nav-link">Character Gallery</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content-box">
+      <h2>Game Area</h2>
+      <p id="category"></p>
+
+      <img id="silhouette" src="images/mario.png" class="silhouette-glow" alt="Character silhouette">
+
+      <div class="button-row">
+        <button type="button" id="hintBtn" class="track-button">Hint</button>
+        <button type="button" id="nextBtn" class="track-button">Next</button>
+      </div>
+    </section>
+
+    <section class="form-box">
+      <h3>Enter Your Guess</h3>
+      <form id="guessForm">
+        <label for="guessInput">Your guess</label>
+        <input type="text" id="guessInput" name="guessInput" required>
+        <button type="submit">Submit Guess</button>
+      </form>
+
+      <p id="feedback" class="feedback"></p>
+      <p id="score">Score: 0 / 11</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
